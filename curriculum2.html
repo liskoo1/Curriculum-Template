@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style2-compact.css">
+    <title>Luis Requena Mellado - Currículum Vitae</title>
+    <style>
+      .pdf-buttons {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .pdf-btn {
+        background: #4a90e2;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+        transition: all 0.3s ease;
+      }
+      .pdf-btn:hover {
+        background: #3182ce;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
+      }
+      .pdf-btn:active {
+        transform: translateY(0);
+      }
+      .pdf-btn:disabled {
+        background: #cbd5e0;
+        cursor: not-allowed;
+        transform: none;
+      }
+      @media print {
+        .pdf-buttons {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Columna Izquierda -->
+      <aside class="sidebar">
+        <!-- Foto -->
+        <div class="photo-section">
+          <img src="./public/img/yo2.png" alt="Luis Requena Mellado" class="profile-photo">
+        </div>
+
+        <!-- Datos Personales -->
+        <section class="section">
+          <h2 class="section-title">Datos personales</h2>
+          <div class="section-content">
+            <p><strong>Nombre:</strong> Luis Francisco Requena Mellado</p>
+            <p><strong>Fecha de Nacimiento:</strong> **/**/****</p>
+            <p><strong>Email:</strong> *****.*******.**@*****.***</p>
+            <p><strong>Ubicación:</strong> Almería, España</p>
+            <p><strong>Teléfono:</strong> *********</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luis-requena-mellado-b59123265/" target="_blank">linkedin.com/in/luis-requena-mellado</a></p>
+            <p><strong>Portfolio:</strong> <a href="https://www.luisrequenadev.com" target="_blank">luisrequenadev.com</a></p>
+          </div>
+        </section>
+
+        <!-- Formación Complementaria -->
+        <section class="section">
+          <h2 class="section-title">Formación complementaria</h2>
+          <div class="section-content">
+            <div class="education-item">
+              <h3>Gestión de la Seguridad Informática de la Empresa</h3>
+              <p class="period">2023</p>
+              <p class="institution">C.I.E.S</p>
+            </div>
+            <div class="education-item">
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p class="period">2024</p>
+              <p class="institution">Amazon Web Services</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="section">
+          <h2 class="section-title">Idiomas</h2>
+          <div class="section-content">
+            <div class="language-item">
+              <p><strong>Inglés:</strong> A2 (En continuo aprendizaje)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Soft Skills -->
+        <section class="section">
+          <h2 class="section-title">Soft Skills</h2>
+          <div class="section-content">
+            <p>• Trabajo en equipo</p>
+            <p>• Fácil aprendizaje</p>
+            <p>• Responsable</p>
+            <p>• Proactivo</p>
+            <p>• Apasionado por el desarrollo</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna Derecha -->
+      <main class="main-content">
+        <!-- Sección 5: Introducción -->
+        <section class="main-section intro-section">
+          <h2 class="main-title">Introducción</h2>
+          <div class="main-content-text">
+            <h1 class="name">LUIS F. REQUENA MELLADO</h1>
+            <h2 class="job-title">DESARROLLADOR JUNIOR</h2>
+            <p>Desde 2022 he dedicado todo mi tiempo libre en formarme en el desarrollo de software. 
+            Me encanta programar y aprender cosas nuevas entorno a este trabajo. No tengo un stack preferido 
+            ya que me gusta desarrollar tanto web, desktop o mobile que aún no lo he tocado pero vendrá...</p>
+            <p>Como veréis en los stacks he programado ya con varios lenguajes. Mi formación como FullStack 
+            la he realizado en la academia ConquerX, por Udemy y Youtube todo lo que sé de C# y .NET. Actualmente estoy cursando el 
+            FP Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) en Digitech para seguir ampliando mis conocimientos 
+            y habilidades técnicas.</p>
+          </div>
+        </section>
+
+        <!-- Sección 6: Habilidades Técnicas -->
+        <section class="main-section">
+          <h2 class="main-title">Habilidades técnicas</h2>
+          <div class="main-content-text">
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                  <li>HTML5, CSS3, JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>React.js</li>
+                  <li>Blazor</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Backend</h3>
+                <ul>
+                  <li>C# / .NET</li>
+                  <li>.NET MAUI</li>
+                  <li>Python</li>
+                  <li>API REST</li>
+                  <li>Java, Spring Boot</li>
+                  
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Bases de Datos</h3>
+                <ul>
+                  <li>SQL Server</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Herramientas</h3>
+                <ul>
+                  <li>Git / GitHub</li>
+                  <li>Visual Studio</li>
+                  <li>Visual Studio Code</li>
+                  <li>Linux</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 7: Información Académica -->
+        <section class="main-section">
+          <h2 class="main-title">Información académica</h2>
+          <div class="main-content-text">
+            <div class="academic-item">
+              <h3>Máster en Desarrollo Full Stack y BlockChain</h3>
+              <p class="period">2022-2024</p>
+              <p class="institution">Academia ConquerBlocks</p>
+              <p class="description">Formación intensiva en desarrollo web completo, incluyendo frontend, backend, bases de datos y tecnologías blockchain.</p>
+            </div>
+            <div class="academic-item">
+              <h3>FP Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+              <p class="period">2024-2026</p>
+              <p class="institution">Digitech</p>
+              <p class="description">Formación profesional de grado superior especializada en desarrollo de aplicaciones para múltiples plataformas (web, móvil, escritorio).</p>
+            </div>
+            <div class="academic-item">
+              <h3>Técnico en Electromecánica</h3>
+              <p class="period">2006-2008</p>
+              <p class="institution">I.E.S. Los Ángeles</p>
+              <p class="description">Formación profesional en sistemas electromecánicos.</p>
+            </div>
+            <div class="academic-item">
+              <h3>Educación Secundaria</h3>
+              <p class="institution">I.E.S Villa de Níjar</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 8: Experiencia Profesional -->
+        <section class="main-section">
+          <h2 class="main-title">Experiencia profesional</h2>
+          <div class="main-content-text">
+            <h3 class="subsection-title">Proyectos de Desarrollo Destacados</h3>
+            
+            <div class="project-item">
+              <h4>1. HelpMeAgro - Plataforma Agrícola</h4>
+              <p>Esta es una plataforma para la asistencia a los agricultores a traves de IA. En ella prodas encontrar desde un chatbot con agentes especializados para diferentes sectores de la agricultura, pizarras de precios, noticia, podcast hasta un asistente personal de tu campaña.</p>
+              <p class="project-link">🔗 <a href="https://www.helpmeagro.com" target="_blank">www.helpmeagro.com</a></p>
+              <p><strong>Tecnologías:</strong> Blazor, .NET MAUI, C#, MySQL, API REST, ASP.NET</p>
+            </div>
+
+            <div class="project-item">
+              <h4>2. Plataforma para opositores de Policía Local en Andalucía</h4>
+              <p>Esta es una plataforma que he desarrollado para la formación de
+                policías locales en España. En ella podrán realizar exámenes generados por IA,
+                además podrán hacer un seguimiento de su evolución como opositores y mas
+                funcionalidades. (TypeScript, REST API, .NET y CSS3.)
+              </p>
+              <p class="project-link">🔗 <a href="https://www.ia-pol.es" target="_blank">www.ia-pol.es</a></p>
+            </div>
+
+            <div class="project-item">
+              <h4>3. Gestión CrossFit Box</h4>
+              <p>Esta es una aplicación de Crossfit que he creado con
+              .Net MAUI. Esta app está compuesta por 3 partes AppCliente/API/AppNegocio. La
+              parte cliente de esta app está disponible Apple Store y Play Store. (C#, .Net MAUI,
+              REST API, ASP.NET, CSS)
+              </p>
+              <p class="project-link">🔗 <a href="https://www.vanguardcrossandfit.com" target="_blank">www.vanguardcrossandfit.com</a></p>
+            </div>
+
+            <div class="note-box" style="background-color: #e3f2fd; border-left-color: #2196f3;">
+              <p><strong>💼 Más proyectos:</strong> Puedes ver más de mis proyectos y trabajos en mi portfolio: <a href="https://www.luisrequenadev.com" target="_blank" style="color: #1976d2; font-weight: 600;">www.luisrequenadev.com</a></p>
+            </div>
+
+            <h3 class="subsection-title">Experiencia Laboral</h3>
+
+            <div class="work-item">
+              <h4>Cross Funcional Training Níjar</h4>
+              <p class="role">Socio</p>
+              <p class="period">2019-2023</p>
+              <p>Gestión y dirección de box de Crossfit junto con socios.</p>
+            </div>
+
+            <div class="work-item">
+              <h4>Revepetrol S.L</h4>
+              <p class="role">Encargado y Gestor del Negocio</p>
+              <p class="period">2010-2023</p>
+              <p>Gestión completa de empresa familiar, incluyendo administración, recursos y operaciones.</p>
+            </div>
+
+            <div class="work-item">
+              <h4>Caldererías Indálicas</h4>
+              <p class="role">Técnico</p>
+              <p class="period">2008-2010</p>
+              <p>Trabajo técnico en el sector de calderería.</p>
+            </div>
+
+            <div class="note-box">
+              <p><strong>Nota:</strong> En el sector del desarrollo de software no tengo experiencia laboral, pero sí muchas ganas de adquirirla.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Botón de impresión -->
+    <div class="pdf-buttons">
+      <button id="print-btn-v2" class="pdf-btn">
+        🖨️ Imprimir
+      </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./public/js/pdf-download.js"></script>
+  </body>
+</html>
